@@ -1,9 +1,13 @@
 // 1-D array
 import java.util.Scanner;
 public class first{
+   
+
+    
     public static void main(String[] args) {
         int n,i;
         int[] a;
+        
         Scanner sc= new Scanner(System.in);
 
         System.out.print("Enter no. of elements in array :");
