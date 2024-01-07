@@ -1,28 +1,36 @@
-// 1-D array
 import java.util.Scanner;
-public class first{
-   
 
-    
+public class first {
+
     public static void main(String[] args) {
-        int n,i;
-        int[] a;
-        
-        Scanner sc= new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter no. of elements in array :");
-        n=sc.nextInt();
-        a= new int[n];
-        System.out.println("Enter elements in array:");
-        for(i=0;i<n;i++){
-            a[i]=sc.nextInt();
+        // Get the number of elements in the array
+        System.out.print("Enter the number of elements in the array: ");
+        int n = scanner.nextInt();
+
+        // Declare and initialize the array
+        int[] array = new int[n];
+
+        // Get elements from the user
+        System.out.println("Enter elements in the array:");
+        for (int i = 0; i < n; i++) {
+            array[i] = scanner.nextInt();
         }
 
+        // Display the array
         System.out.println("The array is:");
-        for(i=0;i<n;i++){
-            System.out.print(a[i]);
-            System.out.print(" ");
+        displayArray(array);
+
+        // Close the scanner to prevent resource leak
+        scanner.close();
+    }
+
+    // Function to display elements of an array
+    private static void displayArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
         }
-        sc.close();
+        System.out.println();  // Move to the next line after printing the array
     }
 }

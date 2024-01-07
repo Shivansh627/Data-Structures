@@ -39,16 +39,21 @@ public static int[] bubble(int[] arr){
 //    deletion
    public static int[] del(int[] arr,int pos){
     int[] b=new int[arr.length-1];
-    for(int i=0;i<b.length;i++){
-        if(i<pos){
-            b[i]=arr[i];
-        }
-        else if(i>=pos){
-            b[i]=arr[i+1];
-        }
-    
+    if(pos>b.length){
+        System.out.println("Invalid Position");
+        return arr;
     }
-    return b;
+    else{
+        for(int i=0;i<b.length;i++){
+            if(i<pos){
+                b[i]=arr[i];
+            }
+            else {
+                b[i]=arr[i+1];
+            }
+        }
+        return b;
+    }
    }
 
    public static void main(String[] args) {
