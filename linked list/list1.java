@@ -40,6 +40,8 @@ public class list1{
         list.create(data);
 
         list.display();
+
+        sc.close();
         
     }
 }
