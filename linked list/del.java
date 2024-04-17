@@ -21,7 +21,7 @@ public class del {
     }
 
     public void delete (int data){
-        node temp,  ptr;
+        node temp;
         temp=head;
         if (temp==null){
             System.out.println("empty");
