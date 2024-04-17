@@ -8,10 +8,14 @@ public class second {
         a.push(20);
         a.push(30);
         a.push(40);
-        System.out.println(a);
-        a.pop();
-        System.out.println(a);
 
+        System.out.println(a);
+        int s= a.search(30);
+        System.out.println(s);
+        
+        System.out.println(a);
+        
+        a.pop();
         System.out.println(a.peek());
     }
 }
