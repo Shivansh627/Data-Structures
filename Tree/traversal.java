@@ -2,7 +2,7 @@
 import java.util.Scanner;
 public class traversal {
 
-    static class node{
+    public static class node{
         int data;
         node left;
         node right;
