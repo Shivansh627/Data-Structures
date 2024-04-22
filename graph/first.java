@@ -1,6 +1,7 @@
 package graph;
 
-import java.util.*;
+import java.util.Scanner;
+import java.util.LinkedList;
 public class first{
 
     public static class graphim{
@@ -21,9 +22,10 @@ public class first{
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int e,v;
-        System.out.println("Enter the number of edges and vertices:");
-        e=sc.nextInt();
+        System.out.println("Enter the number of vertices and edges:");
         v=sc.nextInt();
+        e=sc.nextInt();
+        System.out.println("Enter edges:");
         graphim g = new graphim(v);
         for (int i=0;i<e;i++){
             int s=sc.nextInt();
