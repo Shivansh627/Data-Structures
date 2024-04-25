@@ -34,6 +34,8 @@ public class first{
             g.insertedge(s,d);
 
         }
+
+        sc.close();
         
     }
 }

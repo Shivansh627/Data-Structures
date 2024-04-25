@@ -66,5 +66,7 @@ public class dfs {
         int source=sc.nextInt();
 
         g.traverse(source);
+
+        sc.close();
     }
 }

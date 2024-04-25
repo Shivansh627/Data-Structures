@@ -63,6 +63,8 @@ public class bfs{
         int source=sc.nextInt();
 
         g.traverse(source);
+
+        sc.close();
         
     }
 }
